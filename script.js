@@ -1,37 +1,16 @@
-document.addEventListener("DOMContentLoaded", function(){
-    testJs()
-    findPhotos()
-    // get photo of the day
+var req = new XMLHttpRequest();
+var url = "https://api.nasa.gov/planetary/apod?api_key=";
+var api_key = "8RVaXYWs7HPc5GqaGjAhbPrTREKfzezB4YslyNTp";
+
+req.open("GET", url + api_key);
+req.send();
+
+req.addEventListener("load", function(){
+	if(req.status == 200 && req.readyState == 4){
+  	var response = JSON.parse(req.responseText);
+    document.getElementById("title").textContent = response.title;
+    document.getElementById("date").textContent = response.date;
+    document.getElementById("pic").src = response.hdurl;
+    document.getElementById("explanation").textContent = response.explanation;
+  }
 })
-function testJs(){
-    
-    fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=8RVaXYWs7HPc5GqaGjAhbPrTREKfzezB4YslyNTp")
-        .then((resp)=> resp.json())
-        .then((data)=>{
-            // console.log(data.data.memes)
-            renderPhotos(data.data.photos)           
-        })
-}
-
-const container = document.getElementById('container')
-
-const photos=[]
-
-function findPhotos(){
-    alert("HWelcome Martian")
-    fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=8RVaXYWs7HPc5GqaGjAhbPrTREKfzezB4YslyNTp")
-        .then((resp)=>resp.json())
-        .then((data)=>{
-            data.map((photos)=>{
-                getMarss(photos)
-            })
-        })   
-}
-
-function getMarss(){
-    console.log(data)
-    console.log(container)
-    const container = container
-    const pics = data
-    console.log("Martian Picture Received succesfully")
-}
