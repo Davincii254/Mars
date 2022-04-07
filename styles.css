@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+    
+   
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+h1{
+    text-align: center;
+    font-size: x-large;
+}
+h2{
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+}
+.designDetails{
+    font-size: 20px;
+    font-weight: 700;
+}
+#aboutus{
+    margin-top: 50px;
+}
+#aboutus h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+#aboutus p{
+    font-size: 20px;
+}
+#aboutus .col-6{
+    display: flex;
+}
+#us{
+    display: grid;
+    place-content: center;
+}
+
+.details{
+    text-align: center;
+    font-size: x-large;
+    padding: 5%;
+}
+#title{
+    position: relative;
+    left: 35%;
+}
+#sumbua{
+    position: relative;
+    left: 40%;
+}
+#designDetails {
+    display: none;
+}
+#developmentDetails {
+    display:none;
+}
+#managementDetails {
+    display: none;
+}
+img{
+    height: 50%;
+    width: 50%;
+}
+#pic{
+    width: 100%;
+}
+
+
+#message {
+    background-color: transparent;
+    height: 100px;
+    width: 80%;
+    color: purple;
+    border: 1px solid lightyellow;
+
+}
+#email {
+    width: 40%;
+    color: white;
+    border: 1px solid white;
+    padding-right: 5%;
+    background-color: transparent;
+}
+#name {
+    width: 40%;
+    padding-left: 5%;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    margin: 5px;
+}
+.container {
+    background-color: rgb(119, 163, 157);
+    width: 100%;
+    height: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 3%;
+    align-items: center;
+}
+.designDetails{
+    display: flexbox;
+    margin: 20px;
+    background-color: rgb(56, 121, 78);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+}
+
