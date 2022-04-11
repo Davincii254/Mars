@@ -3,7 +3,15 @@
 - This is a simple programme called Astronomy Picture Of the Day that shows you an Astronomy picture of the day. A different image or photograph of our universe with pictures and descriptions often relate to current events in  astronomy and space exploration.The program uses a NASA API to collect data .
 
 
+## Setup
+Run this command to get the backend started
+ '$ json-server --watch db.json'
 
+ Test your server by visiting this route in the browser:
+
+http://localhost:3000/mars
+
+Then, open the index.html file on your browser to run the application.
 
 Image:
 
