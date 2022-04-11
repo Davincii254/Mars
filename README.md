@@ -5,7 +5,8 @@
 
 ## Setup
 Run this command to get the backend started
- '$ json-server --watch db.json'
+
+ `$ json-server --watch db.json`
 
  Test your server by visiting this route in the browser:
 
